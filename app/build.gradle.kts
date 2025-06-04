@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "net.ayberkbilisim.vkandroidtest"
-    compileSdk = 34
+    compileSdk = 35
     ndkVersion = "27.1.12297006"
 
     defaultConfig {
@@ -50,6 +50,6 @@ android {
 }
 
 dependencies {
-   // implementation(libs.androidx.core.ktx)
     implementation(fileTree("libs") {include("*.jar")})
+    implementation(libs.androidx.core)
 }
